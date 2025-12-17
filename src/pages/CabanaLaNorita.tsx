@@ -4,8 +4,15 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Wifi, Waves, Home, Users, Ship, TreePine, UtensilsCrossed } from "lucide-react";
-import cabanaNorita from "@/assets/cabana-norita-1.jpg";
-import heroImage from "@/assets/hero-delta.jpg";
+import cabanaNorita1 from "@/../public/cabaña-la-norita/1.jpg";
+import cabanaNorita2 from "@/../public/cabaña-la-norita/2.jpg";
+import cabanaNorita3 from "@/../public/cabaña-la-norita/3.jpg";
+import cabanaNorita4 from "@/../public/cabaña-la-norita/4.jpg";
+import cabanaNorita5 from "@/../public/cabaña-la-norita/5.jpg";
+import cabanaNorita6 from "@/../public/cabaña-la-norita/6.jpg";
+import cabanaNorita7 from "@/../public/cabaña-la-norita/7.jpg";
+import cabanaNorita8 from "@/../public/cabaña-la-norita/8.jpg";
+
 
 const amenities = [
   { icon: Home, text: "3 habitaciones, 2 baños" },
@@ -21,7 +28,7 @@ const amenities = [
 ];
 
 const CabanaLaNorita = () => {
-  const images = [cabanaNorita, heroImage];
+  const images = [cabanaNorita1, cabanaNorita2, cabanaNorita3, cabanaNorita4, cabanaNorita5, cabanaNorita6, cabanaNorita7, cabanaNorita8 ];
 
   return (
     <div className="min-h-screen bg-background">

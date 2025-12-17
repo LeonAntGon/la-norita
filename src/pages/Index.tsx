@@ -2,10 +2,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CabinCard from "@/components/CabinCard";
-import heroImage from "@/assets/hero-delta.jpg";
-import cabanaNorita from "@/assets/cabana-norita-1.jpg";
-import monoambiente from "@/assets/monoambiente-1.jpg";
-import candelaPriscilla from "@/assets/candela-priscilla-1.jpg";
+import heroImage from "@/../public/cabaña-la-norita/1.jpg";
+import cabanaNorita from "@/../public/cabaña-la-norita/1.jpg";
+import monoambiente from "@/../public/monoambiente/1.jpg";
+import candelaPriscilla from "@/../public/dpto/1.jpg";
 
 const cabins = [
   {
@@ -47,11 +47,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-4 animate-fade-in">
-            <h1 className="font-display text-4xl md:text-6xl font-bold text-cream mb-4 drop-shadow-lg">
-              Cabañas La Norita
+            <h1 className="font-display text-2xl md:text-6xl font-bold text-cream mb-4 drop-shadow-lg">
+              "Aquí encontrarás un refugio de paz y calidez,  
             </h1>
-            <p className="font-body text-lg md:text-xl text-cream/90 max-w-xl mx-auto">
-              Tu refugio en el Delta del Tigre
+            <p className="font-body text-lg md:text-xl text-cream/90 font-bold max-w-xl mx-auto">
+              donde cada momento se siente especial."
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ const Index = () => {
           </p>
           <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.0!2d-58.5!3d-34.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDI0JzAwLjAiUyA1OMKwMzAnMDAuMCJX!5e0!3m2!1ses!2sar!4v1"
+              src="https://maps.app.goo.gl/cbzZRzu5ECPxZiPc6"
               width="100%"
               height="400"
               style={{ border: 0 }}

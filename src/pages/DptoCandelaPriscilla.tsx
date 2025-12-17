@@ -4,8 +4,15 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import { Link } from "react-router-dom";
 import { ArrowLeft, BedDouble, ShowerHead, Wind, Fan, Sofa, UtensilsCrossed, Ship, Waves, Users } from "lucide-react";
-import candelaPriscilla from "@/assets/candela-priscilla-1.jpg";
-import heroImage from "@/assets/hero-delta.jpg";
+import candelaPriscilla1 from "@/../public/dpto/1.jpg";
+import candelaPriscilla2 from "@/../public/dpto/2.jpg";
+import candelaPriscilla3 from "@/../public/dpto/3.jpg";
+import candelaPriscilla4 from "@/../public/dpto/4.jpg";
+import candelaPriscilla5 from "@/../public/dpto/5.jpg";
+import candelaPriscilla6 from "@/../public/dpto/6.jpg";
+import candelaPriscilla7 from "@/../public/dpto/7.jpg";
+import candelaPriscilla8 from "@/../public/dpto/8.jpg";
+import candelaPriscilla9 from "@/../public/dpto/9.jpg";
 
 const amenities = [
   { icon: BedDouble, text: "1 habitación con cama matrimonial + 2 camas cuchetas" },
@@ -19,7 +26,7 @@ const amenities = [
 ];
 
 const DptoCandelaPriscilla = () => {
-  const images = [candelaPriscilla, heroImage];
+  const images = [candelaPriscilla1, candelaPriscilla2, candelaPriscilla3, candelaPriscilla4, candelaPriscilla5, candelaPriscilla6, candelaPriscilla7, candelaPriscilla8, candelaPriscilla9];
 
   return (
     <div className="min-h-screen bg-background">

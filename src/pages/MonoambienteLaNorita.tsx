@@ -4,8 +4,13 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Wifi, Tv, BedDouble, Refrigerator, ShowerHead, UtensilsCrossed, Waves, Heart } from "lucide-react";
-import monoambiente from "@/assets/monoambiente-1.jpg";
-import heroImage from "@/assets/hero-delta.jpg";
+import monoambiente1 from "@/../public/monoambiente/1.jpg"
+import monoambiente2 from "@/../public/monoambiente/2.jpg";
+import monoambiente3 from "@/../public/monoambiente/3.jpg";
+import monoambiente4 from "@/../public/monoambiente/4.jpg";
+import monoambiente5 from "@/../public/monoambiente/5.jpg";
+import monoambiente6 from "@/../public/monoambiente/6.jpg";
+
 
 const amenities = [
   { icon: Heart, text: "Monoambiente ideal para parejas" },
@@ -19,7 +24,7 @@ const amenities = [
 ];
 
 const MonoambienteLaNorita = () => {
-  const images = [monoambiente, heroImage];
+  const images = [monoambiente1, monoambiente2, monoambiente3, monoambiente4, monoambiente5, monoambiente6 ];
 
   return (
     <div className="min-h-screen bg-background">
