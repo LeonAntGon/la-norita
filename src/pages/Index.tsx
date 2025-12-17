@@ -101,7 +101,7 @@ const Index = () => {
           </p>
           <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-card">
             <iframe
-              src="https://maps.app.goo.gl/cbzZRzu5ECPxZiPc6"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.931621034204!2d-58.62520082484416!3d-34.55528665494118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbf367ae665d%3A0x1bd051b6d4880687!2sLa%20norita%20caba%C3%B1as!5e0!3m2!1ses-419!2sar!4v1765976280811!5m2!1ses-419!2sar"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -110,6 +110,7 @@ const Index = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="Ubicación de Cabañas La Norita"
             />
+
           </div>
         </div>
       </section>
