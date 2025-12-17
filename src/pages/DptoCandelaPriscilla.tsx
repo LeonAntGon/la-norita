@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageCarousel from "@/components/ImageCarousel";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowLeft, BedDouble, ShowerHead, Wind, Fan, Sofa, UtensilsCrossed, Ship, Waves, Users } from "lucide-react";
+
 import candelaPriscilla1 from "@/../public/dpto/1.jpg";
 import candelaPriscilla2 from "@/../public/dpto/2.jpg";
 import candelaPriscilla3 from "@/../public/dpto/3.jpg";
@@ -13,6 +14,8 @@ import candelaPriscilla6 from "@/../public/dpto/6.jpg";
 import candelaPriscilla7 from "@/../public/dpto/7.jpg";
 import candelaPriscilla8 from "@/../public/dpto/8.jpg";
 import candelaPriscilla9 from "@/../public/dpto/9.jpg";
+
+import { useEffect } from "react";
 
 const amenities = [
   { icon: BedDouble, text: "1 habitación con cama matrimonial + 2 camas cuchetas" },
@@ -26,7 +29,27 @@ const amenities = [
 ];
 
 const DptoCandelaPriscilla = () => {
-  const images = [candelaPriscilla1, candelaPriscilla2, candelaPriscilla3, candelaPriscilla4, candelaPriscilla5, candelaPriscilla6, candelaPriscilla7, candelaPriscilla8, candelaPriscilla9];
+  const location = useLocation();
+
+  // Scroll automático al hash #top
+  useEffect(() => {
+    if (location.hash === '#top') {
+      const el = document.getElementById('top');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
+
+  const images = [
+    candelaPriscilla1,
+    candelaPriscilla2,
+    candelaPriscilla3,
+    candelaPriscilla4,
+    candelaPriscilla5,
+    candelaPriscilla6,
+    candelaPriscilla7,
+    candelaPriscilla8,
+    candelaPriscilla9,
+  ];
 
   return (
     <div className="min-h-screen bg-background" id="top">

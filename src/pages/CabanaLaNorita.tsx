@@ -13,6 +13,9 @@ import cabanaNorita6 from "@/../public/cabaña-la-norita/6.jpg";
 import cabanaNorita7 from "@/../public/cabaña-la-norita/7.jpg";
 import cabanaNorita8 from "@/../public/cabaña-la-norita/8.jpg";
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 const amenities = [
   { icon: Home, text: "3 habitaciones, 2 baños" },
@@ -28,6 +31,16 @@ const amenities = [
 ];
 
 const CabanaLaNorita = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#top') {
+      const el = document.getElementById('top');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
+  
   const images = [cabanaNorita1, cabanaNorita2, cabanaNorita3, cabanaNorita4, cabanaNorita5, cabanaNorita6, cabanaNorita7, cabanaNorita8 ];
 
   return (
