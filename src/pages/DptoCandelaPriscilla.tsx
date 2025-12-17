@@ -29,7 +29,7 @@ const DptoCandelaPriscilla = () => {
   const images = [candelaPriscilla1, candelaPriscilla2, candelaPriscilla3, candelaPriscilla4, candelaPriscilla5, candelaPriscilla6, candelaPriscilla7, candelaPriscilla8, candelaPriscilla9];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" id="top">
       <Header />
       <WhatsAppButton />
       

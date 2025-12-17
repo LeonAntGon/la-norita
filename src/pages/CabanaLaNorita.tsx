@@ -31,7 +31,7 @@ const CabanaLaNorita = () => {
   const images = [cabanaNorita1, cabanaNorita2, cabanaNorita3, cabanaNorita4, cabanaNorita5, cabanaNorita6, cabanaNorita7, cabanaNorita8 ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" id="top">
       <Header />
       <WhatsAppButton />
       

@@ -27,7 +27,7 @@ const MonoambienteLaNorita = () => {
   const images = [monoambiente1, monoambiente2, monoambiente3, monoambiente4, monoambiente5, monoambiente6 ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" id="top">
       <Header />
       <WhatsAppButton />
       

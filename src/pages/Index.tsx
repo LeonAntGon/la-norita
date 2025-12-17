@@ -13,21 +13,21 @@ const cabins = [
     capacity: "Hasta 8 personas",
     benefits: ["3 habitaciones, 2 baños", "Deck con vista al río", "Parrilla y horno de barro", "Muelle privado"],
     image: cabanaNorita,
-    href: "/cabana-la-norita",
+    href: "/cabana-la-norita/#top",
   },
   {
     name: "Monoambiente La Norita",
     capacity: "2 personas",
     benefits: ["Ideal para parejas", "WiFi y TV", "Kayak y canoa incluidos", "Baño completo"],
     image: monoambiente,
-    href: "/monoambiente-la-norita",
+    href: "/monoambiente-la-norita/#top",
   },
   {
     name: "Dpto en Candela Priscilla",
     capacity: "Hasta 6 personas",
     benefits: ["1 habitación + cuchetas", "Galería amueblada", "Parrilla y disco", "Muelle y deck"],
     image: candelaPriscilla,
-    href: "/dpto-en-candela-priscilla",
+    href: "/dpto-en-candela-priscilla/#top",
   },
 ];
 
