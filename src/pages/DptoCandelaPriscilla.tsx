@@ -14,6 +14,7 @@ import candelaPriscilla6 from "@/../public/dpto/6.jpg";
 import candelaPriscilla7 from "@/../public/dpto/7.jpg";
 import candelaPriscilla8 from "@/../public/dpto/8.jpg";
 import candelaPriscilla9 from "@/../public/dpto/9.jpg";
+import collage from "@/../public/dpto/collage.jpg";
 
 import { useEffect } from "react";
 
@@ -40,6 +41,7 @@ const DptoCandelaPriscilla = () => {
   }, [location]);
 
   const images = [
+    collage,
     candelaPriscilla1,
     candelaPriscilla2,
     candelaPriscilla3,

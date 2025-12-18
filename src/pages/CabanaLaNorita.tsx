@@ -12,9 +12,15 @@ import cabanaNorita5 from "@/../public/cabaña-la-norita/5.jpg";
 import cabanaNorita6 from "@/../public/cabaña-la-norita/6.jpg";
 import cabanaNorita7 from "@/../public/cabaña-la-norita/7.jpg";
 import cabanaNorita8 from "@/../public/cabaña-la-norita/8.jpg";
+import cabanaNorita9 from "@/../public/cabaña-la-norita/9.jpg";
+import cabanaNorita10 from "@/../public/cabaña-la-norita/10.jpg";
+import cabanaNorita11 from "@/../public/cabaña-la-norita/11.jpg";
+import cabanaNorita12 from "@/../public/cabaña-la-norita/12.jpg";
+import cabanaNorita13 from "@/../public/cabaña-la-norita/13.jpg";
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 
 const amenities = [
@@ -41,9 +47,28 @@ const CabanaLaNorita = () => {
     }
   }, [location]);
   
-  const images = [cabanaNorita1, cabanaNorita2, cabanaNorita3, cabanaNorita4, cabanaNorita5, cabanaNorita6, cabanaNorita7, cabanaNorita8 ];
+  const images = [cabanaNorita1, cabanaNorita2, cabanaNorita3, cabanaNorita4, cabanaNorita5, cabanaNorita6, cabanaNorita7, cabanaNorita8, cabanaNorita9, cabanaNorita10, cabanaNorita11, cabanaNorita12, cabanaNorita13]; 
 
   return (
+    <>
+    {/* 🔹 SEO / META */}
+          <Helmet>
+            <title>Cabañas La Norita | Delta de Tigre</title>
+            <meta
+              name="description"
+              content="Cabañas totalmente equipadas, ideales para descansar y desconectarte. Naturaleza, río y confort en un entorno único."
+            />
+    
+            {/* Open Graph */}
+            <meta property="og:title" content="Cabañas La Norita | Delta de Tigre" />
+            <meta
+              property="og:description"
+              content="Un refugio de paz y naturaleza en el Delta. Reservá directo y sin comisiones."
+            />
+            <meta property="og:image" content="/og-index.jpg" />
+            <meta property="og:type" content="website" />
+          </Helmet>
+    
     <div className="min-h-screen bg-background" id="top">
       <Header />
       <WhatsAppButton />
@@ -128,6 +153,7 @@ const CabanaLaNorita = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 

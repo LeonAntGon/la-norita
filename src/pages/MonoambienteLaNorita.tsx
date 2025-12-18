@@ -11,8 +11,10 @@ import monoambiente3 from "@/../public/monoambiente/3.jpg";
 import monoambiente4 from "@/../public/monoambiente/4.jpg";
 import monoambiente5 from "@/../public/monoambiente/5.jpg";
 import monoambiente6 from "@/../public/monoambiente/6.jpg";
+import collage from "@/../public/monoambiente/collage.jpg";
 
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const amenities = [
   { icon: Heart, text: "Monoambiente ideal para parejas" },
@@ -36,9 +38,28 @@ const MonoambienteLaNorita = () => {
     }
   }, [location]);
 
-  const images = [monoambiente1, monoambiente2, monoambiente3, monoambiente4, monoambiente5, monoambiente6];
+  const images = [collage, monoambiente1, monoambiente2, monoambiente3, monoambiente4, monoambiente5, monoambiente6];
 
   return (
+    <>
+    {/* 🔹 SEO / META */}
+          <Helmet>
+            <title>Cabañas La Norita | Delta de Tigre</title>
+            <meta
+              name="description"
+              content="Cabañas totalmente equipadas, ideales para descansar y desconectarte. Naturaleza, río y confort en un entorno único."
+            />
+    
+            {/* Open Graph */}
+            <meta property="og:title" content="Cabañas La Norita | Delta de Tigre" />
+            <meta
+              property="og:description"
+              content="Un refugio de paz y naturaleza en el Delta. Reservá directo y sin comisiones."
+            />
+            <meta property="og:image" content="/og-index.jpg" />
+            <meta property="og:type" content="website" />
+          </Helmet>
+    
     <div className="min-h-screen bg-background" id="top">
       <Header />
       <WhatsAppButton />
@@ -125,6 +146,7 @@ const MonoambienteLaNorita = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 
