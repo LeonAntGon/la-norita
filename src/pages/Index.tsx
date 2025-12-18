@@ -7,7 +7,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import heroImage from "@/../public/cabaña-la-norita/1.jpg";
 import cabanaNorita from "@/../public/cabaña-la-norita/1.jpg";
 import monoambiente from "@/../public/monoambiente/1.jpg";
-import candelaPriscilla from "@/../public/dpto/1.jpg";
+import candelaPriscilla from "@/../public/dpto/portada.jpg";
 
 const cabins = [
   {

@@ -42,13 +42,13 @@ const DptoCandelaPriscilla = () => {
 
   const images = [
     collage,
-    candelaPriscilla1,
-    candelaPriscilla2,
-    candelaPriscilla3,
     candelaPriscilla4,
     candelaPriscilla5,
     candelaPriscilla6,
     candelaPriscilla7,
+    candelaPriscilla1,
+    candelaPriscilla2,
+    candelaPriscilla3,
     candelaPriscilla8,
     candelaPriscilla9,
   ];

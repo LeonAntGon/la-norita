@@ -11,7 +11,6 @@ import monoambiente3 from "@/../public/monoambiente/3.jpg";
 import monoambiente4 from "@/../public/monoambiente/4.jpg";
 import monoambiente5 from "@/../public/monoambiente/5.jpg";
 import monoambiente6 from "@/../public/monoambiente/6.jpg";
-import collage from "@/../public/monoambiente/collage.jpg";
 
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
@@ -38,7 +37,7 @@ const MonoambienteLaNorita = () => {
     }
   }, [location]);
 
-  const images = [collage, monoambiente1, monoambiente2, monoambiente3, monoambiente4, monoambiente5, monoambiente6];
+  const images = [monoambiente1, monoambiente2, monoambiente3, monoambiente4, monoambiente5, monoambiente6];
 
   return (
     <>
